@@ -1,19 +1,13 @@
-import { createBrowserRouter, Link } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
+import MainDashboard from '../features/dashboard/routes/MainDashboard';
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: (
-        <div>
-          <h1>Hello World</h1>
-          <Link to="about">About Us</Link>
-        </div>
+        <MainDashboard />
       ),
-    },
-    {
-      path: "about",
-      element: <div>About</div>,
-    },
+    }
 ]);
 
 export default router;
