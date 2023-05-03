@@ -1,8 +1,7 @@
 .nav-left {
   background-color: #fff;
   width: 18%;
-  height: calc(100vh - var(--header-height) - 3px);
-  margin-top: 3px;
+  height: calc(100vh - var(--header-height) - 5px);
 }
 
 .nav-list {

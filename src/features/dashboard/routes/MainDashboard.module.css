@@ -2,6 +2,55 @@ div {
   color: black;
 }
 
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  /* gap: 20px; */
+}
+
+.main-dashboard {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  grid-gap: 1rem;
+}
+
+.main-dashboard > div {
+  border: 1px solid salmon;
+}
+
+.summary {
+  grid-column: 1 / 5;
+  grid-row: 2 / 4;
+}
+
+.performance {
+  grid-row: 4 / 8;
+  grid-column: 1 / 5;
+}
+
+.statistics {
+  grid-column: 1 / 5;
+  grid-row: 8 / -1;
+}
+
+.rooms-status {
+  grid-column: 5 / -1;
+  grid-row: 8 / -1;
+}
+
+.rooms {
+  grid-column: 5 / -1;
+  grid-row: 2 / 8;
+}
+
+.grid-header {
+  grid-column: 1 / -1;
+}
+
 .header {
   height: var(--header-height);
   padding: 1rem;

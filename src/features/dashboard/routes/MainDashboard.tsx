@@ -1,5 +1,6 @@
 import styles from "./MainDashboard.module.css";
 import Navigation from "../Navigation/Navigation";
+import RoomsComponent from "../Rooms/RoomsComponent";
 
 const MainDashboard = () => {
   return (
@@ -15,19 +16,20 @@ const MainDashboard = () => {
         </div>
       </header>
 
-      <div>
+      <section className={styles["main-section"]}>
         <Navigation />
-      </div>
 
-      {/* <main>
-        <div>Dashboard header</div>
-        <div>Header of main area</div>
-        <div>Reservation Summary</div>
-        <div>Hotel Performance</div>
-        <div>Occupancy Statistics</div>
-        <div>Rooms</div>
-        <div>Room Status</div>
-      </main> */}
+        <main className={styles["main-dashboard"]}>
+          <div className={styles["grid-header"]}>Dashboard header</div>
+          <div className={styles["summary"]}>Reservation Summary</div>
+          <div className={styles["rooms"]}>
+            <RoomsComponent />
+          </div>
+          <div className={styles["performance"]}>Hotel Performance</div>
+          <div className={styles["rooms-status"]}>Room Status</div>
+          <div className={styles["statistics"]}>Occupancy Statistics</div>
+        </main>
+      </section>
     </>
   );
 };
