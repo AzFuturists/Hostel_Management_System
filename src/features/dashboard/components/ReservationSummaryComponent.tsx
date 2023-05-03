@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Card, CardContent, CardTitle } from '../../../components/Card';
+import { Card, CardContent, CardHeader, CardTitle } from '../../../components/Card';
 
 const CheckContainer = styled.div`
     border-right: 2px solid lightgrey;
@@ -50,7 +50,9 @@ const ReservationSpan = styled.span`
 
 const ReservationSummaryComponent = () => {
     return <Card>
-        <CardTitle>Reservation Summary</CardTitle>
+        <CardHeader>
+            <CardTitle>Reservation Summary</CardTitle>
+        </CardHeader>  
         <CardContent style={{display: 'flex', flexWrap: 'wrap'}}>
                 <CheckContainer>
                     <ReservationTextContainer>

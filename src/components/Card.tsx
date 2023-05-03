@@ -8,6 +8,10 @@ const Card = styled.div`
     background-color: white;
 `;
 
+const CardHeader = styled.div`
+    display: flex;
+`;
+
 const CardTitle = styled.span`
     font-size: medium;
     font-weight: bold;
@@ -22,6 +26,7 @@ const CardContent = styled.div`
 
 export {
     Card,
+    CardHeader,
     CardTitle,
     CardContent
 };
