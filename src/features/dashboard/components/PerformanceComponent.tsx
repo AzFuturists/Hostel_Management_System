@@ -1,9 +1,12 @@
-import { Card, CardTitle, CardContent } from "../../../components/Card";
+import { Card, CardContent, CardTitle } from '../../../components/Card';
+import { Line } from "react-chartjs-2";
 
-const PerformanceComponent = () => {
+const PerformanceComponent = (props: any) => {
     return <Card>
         <CardTitle>Hostel Performance</CardTitle>
-        <CardContent></CardContent>
+        <CardContent>
+            <Line options={props.options} data={props.data} />
+        </CardContent>
     </Card>
 }
 
