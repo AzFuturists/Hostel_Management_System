@@ -1,8 +1,8 @@
-import Performance from "../components/Performance";
+import Occupancy from "../components/Occupancy";
 
 const MainDashboard = () => {
     return <div style={{display: 'flex'}}>
-        <div style={{width: '30vw'}}><Performance /></div>
+        <div style={{width: '30vw'}}><Occupancy /></div>
         <div></div>
     </div>
 };
