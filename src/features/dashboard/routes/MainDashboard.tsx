@@ -1,6 +1,6 @@
 import styles from "./MainDashboard.module.css";
 import Navigation from "../Navigation/Navigation";
-import RoomsComponent from "../Rooms/RoomsComponent";
+import Rooms from "../Rooms/Rooms";
 
 const MainDashboard = () => {
   return (
@@ -23,7 +23,7 @@ const MainDashboard = () => {
           <div className={styles["grid-header"]}>Dashboard header</div>
           <div className={styles["summary"]}>Reservation Summary</div>
           <div className={styles["rooms"]}>
-            <RoomsComponent />
+            <Rooms />
           </div>
           <div className={styles["performance"]}>Hotel Performance</div>
           <div className={styles["rooms-status"]}>Room Status</div>
