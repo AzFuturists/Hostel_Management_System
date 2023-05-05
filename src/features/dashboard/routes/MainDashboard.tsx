@@ -1,9 +1,8 @@
-import Occupancy from "../components/Occupancy";
+import RoomStatus from "../components/RoomStatus";
 
 const MainDashboard = () => {
     return <div style={{display: 'flex'}}>
-        <div style={{width: '30vw'}}><Occupancy /></div>
-        <div></div>
+        <RoomStatus></RoomStatus>
     </div>
 };
 
