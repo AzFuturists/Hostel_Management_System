@@ -1,0 +1,22 @@
+.nav-left {
+  background-color: #fff;
+  width: 18%;
+  height: calc(100vh - var(--header-height) - 3px);
+  margin-top: 3px;
+}
+
+.nav-list {
+  margin: 0 1rem 0 4rem;
+  padding-top: 3rem;
+  list-style-type: none;
+}
+
+.nav-list__item {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}

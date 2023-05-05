@@ -1,0 +1,11 @@
+div {
+  color: black;
+}
+
+.header {
+  height: var(--header-height);
+  padding: 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
