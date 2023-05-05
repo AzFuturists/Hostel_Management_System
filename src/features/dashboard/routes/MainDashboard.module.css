@@ -1,6 +1,6 @@
-div {
+/* div {
   color: black;
-}
+} */
 
 .main-section {
   display: flex;
@@ -11,10 +11,11 @@ div {
 
 .main-dashboard {
   display: grid;
+  height: calc(100vh - var(--header-height) - 5px);
   width: 80%;
   margin: 0 auto;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(11, 1fr);
+  grid-template-rows: 5rem repeat(12, 1fr);
   grid-gap: 1rem;
 }
 
@@ -24,22 +25,23 @@ div {
 
 .summary {
   grid-column: 1 / 5;
-  grid-row: 2 / 4;
+  grid-row: 2 / 3;
 }
 
 .performance {
-  grid-row: 4 / 8;
   grid-column: 1 / 5;
+  grid-row: 3 / 8;
+  /* overflow: hidden; */
 }
 
 .statistics {
   grid-column: 1 / 5;
-  grid-row: 8 / -1;
+  grid-row: 9 / -1;
 }
 
 .rooms-status {
   grid-column: 5 / -1;
-  grid-row: 8 / -1;
+  grid-row: 11 / -1;
 }
 
 .rooms {

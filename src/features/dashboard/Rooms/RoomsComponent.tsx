@@ -1,4 +1,5 @@
 import styles from "./Rooms.module.css";
+import { Card } from "../../../components/Card";
 
 type RoomsProps = {
   total: number;
@@ -7,7 +8,7 @@ type RoomsProps = {
 
 const RoomsComponent = ({ total, filled }: RoomsProps) => {
   return (
-    <section className={styles["rooms-section"]}>
+    <Card>
       <h2 className={styles["section-header"]}>Rooms</h2>
       <div className={styles["rooms-details"]}>
         <div className={styles["progress-bar"]}>
@@ -75,7 +76,7 @@ const RoomsComponent = ({ total, filled }: RoomsProps) => {
           </div>
         </div>
       </div>
-    </section>
+    </Card>
   );
 };
 
