@@ -1,8 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit'
-import testReducer from './testReducer'
+import { configureStore } from "@reduxjs/toolkit";
+import testReducer from "./testReducer";
+import roomsReducer from "./roomsSlice";
 
-export default configureStore({
+export const store = configureStore({
   reducer: {
-    test: testReducer
+    test: testReducer,
+    rooms: roomsReducer,
   },
-})
+});
+
+export type RootState = ReturnType<typeof store.getState>;
