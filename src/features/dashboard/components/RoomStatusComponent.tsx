@@ -1,80 +1,86 @@
-import { Card, CardContent, CardHeader, CardTitle } from "../../../components/Card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "../../../components/Card";
 import styled from "styled-components";
 
 const RoomDetailsTable = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    width: 200px;
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  padding: 10px;
 `;
 
 const RoomDetailsHeader = styled.div`
-    display: flex;
-    width: 200px;
-    color: blue;
-    padding: 5px;
+  display: flex;
+  width: 200px;
+  color: blue;
+  padding: 5px;
+  font-size: 1.6rem;
 `;
 
 const RoomDetailsRow = styled.div`
-    display: flex;
-    width: 200px;
-    padding: 5px;
+  display: flex;
+  width: 200px;
+  padding: 5px;
+  font-size: 1.6rem;
 `;
 
 const RoomDetailTitle = styled.div`
-    flex-grow: 4;
+  flex-grow: 4;
+  color: black;
 `;
 
-const RoomDetailNumber = styled.div`
-`;
+const RoomDetailNumber = styled.div``;
 
 const RoomStatusComponent = (props: any) => {
-    return <Card>
+  return (
+    <Card>
+      <CardHeader>
         <CardHeader>
-            <CardHeader>
-                <CardTitle>
-                    Room status
-                </CardTitle>
-            </CardHeader>
+          <CardTitle>Room status</CardTitle>
         </CardHeader>
-        <CardContent>
-            <RoomDetailsTable>
-                <RoomDetailsHeader>
-                    <RoomDetailTitle>Occupied rooms</RoomDetailTitle>
-                    <RoomDetailNumber>104</RoomDetailNumber>
-                </RoomDetailsHeader>
-                <RoomDetailsRow>
-                    <RoomDetailTitle>Clean</RoomDetailTitle>
-                    <RoomDetailNumber>10</RoomDetailNumber>
-                </RoomDetailsRow>
-                <RoomDetailsRow>
-                    <RoomDetailTitle>Dirty</RoomDetailTitle>
-                    <RoomDetailNumber>10</RoomDetailNumber>
-                </RoomDetailsRow>
-                <RoomDetailsRow>
-                    <RoomDetailTitle>Inspected</RoomDetailTitle>
-                    <RoomDetailNumber>15</RoomDetailNumber>
-                </RoomDetailsRow>
-                <RoomDetailsHeader>
-                    <RoomDetailTitle>Available rooms</RoomDetailTitle>
-                    <RoomDetailNumber>49</RoomDetailNumber>
-                </RoomDetailsHeader>
-                <RoomDetailsRow>
-                    <RoomDetailTitle>Clean</RoomDetailTitle>
-                    <RoomDetailNumber>10</RoomDetailNumber>
-                </RoomDetailsRow>
-                <RoomDetailsRow>
-                    <RoomDetailTitle>Dirty</RoomDetailTitle>
-                    <RoomDetailNumber>19</RoomDetailNumber>
-                </RoomDetailsRow>
-                <RoomDetailsRow>
-                    <RoomDetailTitle>Inspected</RoomDetailTitle>
-                    <RoomDetailNumber>30</RoomDetailNumber>
-                </RoomDetailsRow>
-            </RoomDetailsTable>
-        </CardContent>
+      </CardHeader>
+      <CardContent>
+        <RoomDetailsTable>
+          <RoomDetailsHeader>
+            <RoomDetailTitle>Occupied rooms</RoomDetailTitle>
+            <RoomDetailNumber>104</RoomDetailNumber>
+          </RoomDetailsHeader>
+          <RoomDetailsRow>
+            <RoomDetailTitle>Clean</RoomDetailTitle>
+            <RoomDetailNumber>10</RoomDetailNumber>
+          </RoomDetailsRow>
+          <RoomDetailsRow>
+            <RoomDetailTitle>Dirty</RoomDetailTitle>
+            <RoomDetailNumber>10</RoomDetailNumber>
+          </RoomDetailsRow>
+          <RoomDetailsRow>
+            <RoomDetailTitle>Inspected</RoomDetailTitle>
+            <RoomDetailNumber>15</RoomDetailNumber>
+          </RoomDetailsRow>
+          <RoomDetailsHeader>
+            <RoomDetailTitle>Available rooms</RoomDetailTitle>
+            <RoomDetailNumber>49</RoomDetailNumber>
+          </RoomDetailsHeader>
+          <RoomDetailsRow>
+            <RoomDetailTitle>Clean</RoomDetailTitle>
+            <RoomDetailNumber>10</RoomDetailNumber>
+          </RoomDetailsRow>
+          <RoomDetailsRow>
+            <RoomDetailTitle>Dirty</RoomDetailTitle>
+            <RoomDetailNumber>19</RoomDetailNumber>
+          </RoomDetailsRow>
+          <RoomDetailsRow>
+            <RoomDetailTitle>Inspected</RoomDetailTitle>
+            <RoomDetailNumber>30</RoomDetailNumber>
+          </RoomDetailsRow>
+        </RoomDetailsTable>
+      </CardContent>
     </Card>
-}
+  );
+};
 
 export default RoomStatusComponent;
-
