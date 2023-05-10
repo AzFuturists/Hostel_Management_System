@@ -1,5 +1,5 @@
-import { Card, CardHeader, CardTitle, CardContent } from "../../../components/Card";
-import { DateSelect, DateSelectContainer } from "../../../components/DateSelect";
+import { Card, CardHeader, CardTitle, CardContent } from "../../../../components/Card";
+import { DateSelect, DateSelectContainer } from "../../../../components/DateSelect";
 import { Bar } from "react-chartjs-2";
 
 const OccupancyComponent = (props: any) => {
@@ -17,7 +17,7 @@ const OccupancyComponent = (props: any) => {
             </DateSelectContainer>
         </CardHeader>
         <CardContent>
-            <Bar options={props.options} data={props.data} />;
+            <Bar height={230} width={1000} options={props.options} data={props.data} />;
         </CardContent>
     </Card>
 }

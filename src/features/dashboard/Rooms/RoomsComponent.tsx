@@ -8,7 +8,7 @@ type RoomsProps = {
 
 const RoomsComponent = ({ total, filled }: RoomsProps) => {
   return (
-    <Card>
+    <Card style={{height: '100%', width: '100%'}}>
       <h2 className={styles["section-header"]}>Rooms</h2>
       <div className={styles["rooms-details"]}>
         <div className={styles["progress-bar"]}>

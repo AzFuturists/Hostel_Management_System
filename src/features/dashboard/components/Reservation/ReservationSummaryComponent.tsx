@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Card, CardContent, CardHeader, CardTitle } from '../../../components/Card';
+import { Card, CardContent, CardHeader, CardTitle } from '../../../../components/Card';
 
 const CheckContainer = styled.div`
     border-right: 2px solid lightgrey;

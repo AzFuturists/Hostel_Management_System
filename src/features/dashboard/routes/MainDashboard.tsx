@@ -1,9 +1,9 @@
 import styles from "./MainDashboard.module.css";
 import Rooms from "../Rooms/Rooms";
-import ReservationSummary from "../components/ReservationSummary";
-import Performance from "../components/Performance";
-import Occupancy from "../components/Occupancy";
-import RoomStatus from "../components/RoomStatus";
+import ReservationSummary from "../components/Reservation/ReservationSummary";
+import Performance from "../components/Performance/Performance";
+import Occupancy from "../components/Occupancy/Occupancy";
+import RoomStatus from "../components/RoomStatus/RoomStatus";
 import DashboardHeader from "../DashboardHeader/DashboardHeader";
 
 const MainDashboard = () => {

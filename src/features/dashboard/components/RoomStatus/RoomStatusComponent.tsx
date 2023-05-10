@@ -3,7 +3,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from "../../../components/Card";
+} from "../../../../components/Card";
 import styled from "styled-components";
 
 const RoomDetailsTable = styled.div`
