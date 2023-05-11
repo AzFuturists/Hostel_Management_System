@@ -3,9 +3,13 @@ import styles from "./DashboardHeader.module.css";
 
 type DashboardHeaderProps = {
   currentDate: string;
+  handleShowCreateBooking: () => void;
 };
 
-const DashboardHeaderComponent = ({ currentDate }: DashboardHeaderProps) => {
+const DashboardHeaderComponent = ({
+  currentDate,
+  handleShowCreateBooking,
+}: DashboardHeaderProps) => {
   return (
     <Card>
       <div className={styles.container}>
@@ -15,7 +19,12 @@ const DashboardHeaderComponent = ({ currentDate }: DashboardHeaderProps) => {
           Create booking
         </button>
         <span className={styles.date}>{currentDate}</span>
-        <button className={styles["create-booking"]}>Create booking</button>
+        <button
+          className={styles["create-booking"]}
+          onClick={handleShowCreateBooking}
+        >
+          Create booking
+        </button>
       </div>
     </Card>
   );

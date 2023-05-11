@@ -1,11 +1,18 @@
-import CreateBookingComponent from "./CreateBookingComponent"
+import { closeCreateBookingModal } from "../../../../store/createBookingSlice";
+import CreateBookingComponent from "./CreateBookingComponent";
+import { useDispatch } from "react-redux";
 
 const CreateBooking = () => {
+  const dispatch = useDispatch();
 
-    const args = {
+  function handleCloseCreateBookingModal() {
+    dispatch(closeCreateBookingModal());
+  }
 
-    }
-    return <CreateBookingComponent {...args} />
-}
+  const args = {
+    handleCloseCreateBookingModal,
+  };
+  return <CreateBookingComponent {...args} />;
+};
 
 export default CreateBooking;

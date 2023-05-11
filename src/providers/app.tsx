@@ -10,9 +10,7 @@ type AppProviderProps = {
 export const AppProvider = ({ children }: AppProviderProps) => {
   return (
     <React.StrictMode>
-      <Layout>
-        <Provider store={store}>{children}</Provider>
-      </Layout>
+      <Provider store={store}>{children}</Provider>
     </React.StrictMode>
   );
 };

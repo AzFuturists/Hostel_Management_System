@@ -1,0 +1,55 @@
+.module.module {
+  /* background-color: sandybrown; */
+  /* border: 1px solid #000; */
+  width: 80rem;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.module-header.module-header {
+  font-size: 2rem;
+  color: #444;
+}
+
+.mb {
+  margin-bottom: 3rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 1.6rem;
+}
+
+.add {
+  width: 12rem;
+  height: 4rem;
+  align-self: flex-end;
+  justify-self: flex-end;
+  cursor: pointer;
+  margin-top: 8rem;
+}
+
+.close {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
