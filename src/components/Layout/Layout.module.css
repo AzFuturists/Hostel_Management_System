@@ -1,10 +1,10 @@
 div {
-    color: black;
+  color: black;
 }
-  
+
 .main-section {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
+  margin-top: 2px;
   /* gap: 20px; */
 }

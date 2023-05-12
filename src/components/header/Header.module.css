@@ -1,0 +1,119 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: #fff;
+  height: 10vh;
+}
+
+.logo {
+  /* background-color: salmon; */
+  color: #fff;
+  height: 100%;
+  flex: 1;
+  font-size: large;
+  text-align: center;
+}
+
+.search {
+  /* background-color: bisque; */
+  /* height: 100%; */
+  flex: 3;
+  position: relative;
+}
+
+.search-input {
+  width: 60%;
+  padding: 0.8rem 1.2rem;
+  padding-left: 5rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 600;
+  background-color: #ecebeb;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-icon {
+  font-size: 2rem;
+  position: absolute;
+  margin-right: 1rem;
+  left: 1rem;
+  top: 0.8rem;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.user-area {
+  /* background-color: chartreuse; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-right: 5rem;
+}
+
+.notifications {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s background-color;
+  position: relative;
+}
+
+.notifications::after {
+  content: "";
+  height: 80%;
+  width: 1px;
+  background-color: #ddd;
+  position: absolute;
+  left: 130%;
+}
+
+.notifications:has(.ring:hover) {
+  background-color: #f1f3f5;
+}
+
+.ring {
+  cursor: pointer;
+  color: #555;
+}
+
+.user {
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.occupancy {
+  font-size: 1.2rem;
+}
+
+.avatar-container {
+  width: 4rem;
+  height: 4rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}

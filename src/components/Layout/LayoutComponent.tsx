@@ -2,6 +2,7 @@ import styles from "../Layout/Layout.module.css";
 import Navigation from "../Navigation/Navigation";
 import Modal from "../Modal";
 import CreateBooking from "../../features/booking/routes/CreateBooking/CreateBooking";
+import Header from "../header/Header";
 
 type LayoutComponentProps = {
   children: React.ReactNode;
@@ -19,16 +20,7 @@ const LayoutComponent = ({
           <CreateBooking />
         </Modal>
       )}
-      <header className={styles.header}>
-        <div>Logo</div>
-        <div>
-          <input type="text" placeholder="Search rooms, offers" />
-        </div>
-        <div>
-          <div>Notification Bell</div>
-          <div>User</div>
-        </div>
-      </header>
+      <Header />
       <section className={styles["main-section"]}>
         <Navigation />
         {children}
